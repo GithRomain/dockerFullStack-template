@@ -3,7 +3,7 @@ WORKDIR /usr/app
 
 COPY package*.json ./
 
-RUN npm install && npm fix audit
+RUN npm install
 
 COPY . .
 
