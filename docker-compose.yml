@@ -10,10 +10,12 @@ services:
       - ./Backend:/usr/app
       - /usr/app/node_modules
     ports: ['5000:5000']
+
   db:
     container_name: db
     image: mongo:4.0
     restart: always
+
   frontend:
     container_name: frontend
     build:
