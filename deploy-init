@@ -1,0 +1,17 @@
+heroku login
+mkdir Deploiement
+cd Frontend
+npm i
+npm run build
+cd ../Backend
+npm i
+cd ..
+cp -a Backend/ Deploiement/
+cd Deploiement
+rm DockerFile
+rm -rfv node_modules
+git init
+heroku git:remote -a <nomApp>
+git add .
+git commit -am "init"
+git push heroku master
