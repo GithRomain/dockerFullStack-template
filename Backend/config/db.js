@@ -2,7 +2,7 @@
 const mongoose = require("mongoose");
 //Assign MongoDB connection string to Uri and declare options settings
 // Important!!! set your real login and passwd in connection string
-const uri ="";
+const uri ="yourLink";
 
 // Declare a variable named option and assign optional settings
 const options = {

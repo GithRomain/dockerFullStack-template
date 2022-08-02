@@ -1,11 +1,15 @@
 # dockerFullStack-template
 
-Fullstack template app with dependencie includes, no need to install modules on yout engine
+Fullstack template app with dependencie includes. To run in local use docker and to deploy run the bash command follow the next instructions :
 
 ## Requirements
+[Create mongo account and new cluster](https://www.mongodb.com)
+
 [Docker-Windows](https://docs.docker.com/desktop/install/windows-install/)
 
 [Docker-Mac](https://docs.docker.com/desktop/install/mac-install/)
+
+[Create an Heroku account](https://dashboard.heroku.com/)
 
 ### Technologies
 
@@ -14,10 +18,42 @@ Fullstack template app with dependencie includes, no need to install modules on 
 - Node.js
 - Express.js
 
-On every OS and everywhere to run the app just run :
+### Deploiement on Heroku
+- Heroku
+
+# /Settings :
+Connect your database :
+---
+    cd Backend/config/db
+On mongo click on connect and copy/paste the url on "const uri = 'yourLink'"
+
+Connect your heroku repository :
+---
+    cd deploy-init
+On heroku click on new app and go to deploy and in the file replace "heroku git:remote -a 'nomApp'"
+
+
+# /Local :
+
+In the root :
+---
+    cd dockerFullstack-template
+
+On every OS and everywhere to run the app in local just run (Back is runnning on port 5000 and Front on port 8081) :
 ---
     docker-compose up -d
+In your web application go to : http://localhost:8081/ to access to your front app
 
-And to shut down the app just run : 
+And to shut down the app in local just run : 
 ---
     docker-compose down
+
+# /Serveur :
+
+And to deploy the app for the fist time just run  :
+---
+    bash deploy-init
+
+And to deploy the app for all the other time time just run  :
+---
+    bash deploy-common
