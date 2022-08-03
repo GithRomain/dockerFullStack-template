@@ -1,13 +1,12 @@
 FROM node:16.15.1
 
-# set working directory
-WORKDIR /app
+WORKDIR /usr/app
 
 COPY package*.json ./
 
 RUN npm install
+RUN npm install -g nodemon
 
 COPY . .
 
-# start app
-CMD ["npm", "run", "serve"]
+CMD ["npm", "start"]
