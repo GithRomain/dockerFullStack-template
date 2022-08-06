@@ -6,7 +6,6 @@ npm i
 cd ..
 cp -a Backend/ Deploiement/
 cd Deploiement
-rm DockerFile
 rm -rfv node_modules
 git add .
 git commit -am "edit"

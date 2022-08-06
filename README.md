@@ -41,12 +41,14 @@ In the root :
 
 On every OS and everywhere to run the app in local just run (Back is runnning on port 5000 and Front on port 8081) :
 ---
-    docker-compose up -d
-In your web application go to : http://localhost:8081/ to access to your front app
+    (docker-compose up -d) Previous version need some update do (while existing a Docker folder):
+    bash connect
+In your web application go to : http://localhost:8081/ to access to your front app and : http://localhost:5000/ to access to your back app
 
 And to shut down the app in local just run : 
 ---
-    docker-compose down
+    (docker-compose down)
+    bash disconnect
 
 # /Serveur :
 

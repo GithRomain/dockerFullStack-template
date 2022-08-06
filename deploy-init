@@ -8,7 +8,6 @@ npm i
 cd ..
 cp -a Backend/ Deploiement/
 cd Deploiement
-rm DockerFile
 rm -rfv node_modules
 git init
 heroku git:remote -a <nomApp>
