@@ -24,8 +24,9 @@ Fullstack template app with dependencie includes. To run in local use docker and
 # /Settings :
 Connect your database :
 ---
-    cd Backend/config/.env
-    MONGOURL="yourURL"
+    cd Backend/
+    MONGOUSER="yourURL"
+    MONGOPASSWORD="yourPassword"
     
 
 Connect your heroku repository :

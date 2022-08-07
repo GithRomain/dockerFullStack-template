@@ -3,8 +3,7 @@ require("dotenv").config()
 const mongoose = require("mongoose");
 //Assign MongoDB connection string to Uri and declare options settings
 // Important!!! set your real login and passwd in connection string
-const uri = process.env.MONGOURL;
-
+const uri = "mongodb+srv://"+process.env.MONGOUSER+":"+process.env.MONGOPASSWORD+"@lg.qhona1z.mongodb.net/?retryWrites=true&w=majority";
 // Declare a variable named option and assign optional settings
 const options = {
 useNewUrlParser: true,
